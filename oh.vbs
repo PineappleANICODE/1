@@ -7,7 +7,7 @@ Set WSHShell=Wscript.CreateObject("Wscript.Shell")
 
 Dim x
 For x = 1 to 10
-  WSHShell.Run "https://pineappleanicode.github.io/1/why?.html"
+  WSHShell.Run "https://pineappleanicode.github.io/why/"
 Next
 
 
