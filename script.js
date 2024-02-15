@@ -1,8 +1,6 @@
-var el = document.getElementById("showName");
-el.addEventListener("click", formatName, false);
-
-function formatName() {
-  var NAME = document.getElementById('NAME').value;
+function myFunction() {
+  var NAME = document.getElementById("NAME").value;
+  var text;
 
   
   if (NAME === "searcher") {
@@ -20,9 +18,7 @@ function formatName() {
     
   
   } else {
-      document.getElementById('fullName').innerHTML = NAME+ ", YOU DON'T EXIST. "+NAME+ ", YOU DON'T EXIST. "+NAME+ ", YOU DON'T EXIST. "+NAME+ ", YOU DON'T EXIST";
+    text = NAME+ ", YOU DON'T EXIST. "+NAME+ ", YOU DON'T EXIST. "+NAME+ ", YOU DON'T EXIST. "+NAME+ ", YOU DON'T EXIST";
   }
+  document.getElementById("demo").innerHTML = text;
 }
-
-
-setTimeout(function(){ document.getElementById('div1').style.visibility = "visible"; },3000);
